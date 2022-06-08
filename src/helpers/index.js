@@ -1,3 +1,7 @@
 import arrayNumber  from "./numbers";
+import arrayOperations from "./signals";
 
-export default arrayNumber;
+export {
+  arrayNumber,
+  arrayOperations
+};
