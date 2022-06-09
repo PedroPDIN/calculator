@@ -1,3 +1,3 @@
-const arrayOperations = ['+', '-', 'x', '/', '='];
+const arrayOperations = ['+', '-', 'x', '/'];
 
 export default arrayOperations
