@@ -1,4 +1,5 @@
 import React from "react";
+import Styles from '../styles'
 import { arrayOperations } from "../helpers";
 
 const Operations = (props) => {
@@ -11,19 +12,17 @@ const Operations = (props) => {
   }
 
   return (
-    <div>
+    <Styles.Operations>
       {arrayOperations.map((signal) => (
-        <div>
           <button
           type="button"
           value={ signal }
           disabled={ isDisabled }
           onClick={(e) => selectOperation(e.target.value)}
           >{ signal }</button>
-        </div>
       ))}
       <button type="button" onClick={ functionResult }>=</button>
-    </div>
+    </Styles.Operations>
   )
 }
 
