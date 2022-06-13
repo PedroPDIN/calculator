@@ -1,4 +1,5 @@
 import React from "react";
+import Styles from '../styles'
 import { arrayNumber } from "../helpers";
 
 const Numbers = (props) => {
@@ -13,17 +14,15 @@ const Numbers = (props) => {
   }
   
   return (
-    <div>
+    <Styles.Buttons>
         {arrayNumber.map((number) => (
-        <div>
           <button 
           type="button"
           value={ number }
           onClick={(e) => selectNumber(e.target.value)}
           >{ number }</button>
-        </div>
       ))}
-    </div>
+    </Styles.Buttons>
   )
 }
 
