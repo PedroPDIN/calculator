@@ -1,0 +1,11 @@
+html {
+  background-color: #B9C8C8;
+}
+
+body {
+  align-items: center;
+  margin: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: center;
+}
